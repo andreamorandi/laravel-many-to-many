@@ -38,6 +38,11 @@
                                 </th>
                                 <td>{{ count($technology->projects) }}</td>
                                 <td>
+                                    <a href="{{ route('admin.technologies.show', $technology->slug) }}"
+                                        class="btn btn-success">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+
                                     <button form="edit-technology-{{ $technology->id }}" class="btn btn-warning"
                                         href="" type="submit">
                                         <i class="fa-solid fa-pen-to-square"></i>

@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="text-start mt-4">
-            <a class="btn btn-success" href="{{ route('admin.projects.index') }}">
+            <a class="btn btn-success" href="{{ url()->previous() }}">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
         </div>

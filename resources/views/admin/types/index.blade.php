@@ -38,6 +38,9 @@
                                 </th>
                                 <td>{{ count($type->projects) }}</td>
                                 <td>
+                                    <a href="{{ route('admin.types.show', $type->slug) }}" class="btn btn-success">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
                                     <button form="edit-type-{{ $type->id }}" class="btn btn-warning" href=""
                                         type="submit">
                                         <i class="fa-solid fa-pen-to-square"></i>
